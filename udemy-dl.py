@@ -421,10 +421,10 @@ class UdemyDownload:
                         i += 1
                     elif _url == 'html_content':
                         print (fc + sd + "\n[" + fm + sb + "*" + fc + sd + "] : " + fg + sd + "Lecture : (%s)" % (lecture_name))
-                        _view_html = (''.join([raw if ord(raw) < 128 else '' for raw in _view_html]))
                         data = '''
                         <html>
                         <head>
+                        <meta charset="UTF-8">
                         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
                         <title>%s</title>
                         </head>

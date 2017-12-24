@@ -330,6 +330,7 @@ class UdemyInfoExtractor:
                     ind     = entry.get('object_index')
                     _title  = self._sanitize_title(entry.get('title'))
                     t       = (''.join([i if ord(i) < 128 else ' ' for i in _title]))
+                    t       = _title
                     chap    = "{0:03d} {1!s}".format(ind, t if '.' not in t else t.replace('.', '_'))
                     if chap not in udemy_dict:
                         udemy_dict[chap] = {}
@@ -501,6 +502,7 @@ class UdemyInfoExtractor:
                                 ind = entry.get('object_index')
                                 _title  = self._sanitize_title(entry.get('title'))
                                 t = (''.join([i if ord(i) < 128 else ' ' for i in _title]))
+                                t = _title
                                 title = "{0:03d} {1!s}".format(ind, t if '.' not in t else t.replace('.', '_'))
                                 udemy_dict[chap][title] = {}
                                 data   = _parse_json(
