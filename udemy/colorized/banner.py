@@ -8,9 +8,10 @@ def banner():
 %s%s / /_/ / /_/ /  __/ / / / / / /_/ /_____/ /_/ / /    
 %s%s \__,_/\__,_/\___/_/ /_/ /_/\__, /      \__,_/_/     
 %s%s                           /____/
-                                 %s%sVersion : %s%s0.3
-                                 %s%sAuthor  : %s%sNasir khan(r0ot h3x49)
-                                 %s%sVisit   : %s%shttps://github.com/r0oth3x49
+                                 %s%sVersion     : %s%s0.3
+                                 %s%sAuthor      : %s%sNasir khan(r0ot h3x49)
+                                 %s%sContributor : %s%sSalih KARAHAN
+                                 %s%sVisit       : %s%shttps://github.com/SalihKARAHAN/udemy-dl
 
-''' % (fc, sb,fc, sb,fc, sb, fm, sb, fy, sb, fy, sb, fy,sd, fg, sd, fy, sd, fg, sd, fy, sd, fg, sd)
+''' % (fc, sb,fc, sb,fc, sb, fm, sb, fy, sb, fy, sb, fy,sd, fg, sd, fy, sd, fg, sd, fy, sd, fg, sd, fy, sd, fg, sd)
     return banner
