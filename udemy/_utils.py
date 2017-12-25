@@ -1,6 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import sys
+
 from . import __author__
 from . import __version__
 from ._compat import (
@@ -47,6 +49,8 @@ class HTMLAttributeParser(compat_HTMLParser):
     def __init__(self):
         self.attrs = {}
         compat_HTMLParser.__init__(self)
+        reload(sys)  
+        sys.setdefaultencoding('utf8')
 
     def handle_starttag(self, tag, attrs):
         self.attrs = dict(attrs)

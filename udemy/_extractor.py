@@ -38,6 +38,8 @@ class Session:
     headers = std_headers
     
     def __init__(self):
+        reload(sys)  
+        sys.setdefaultencoding('utf8')
         self.session = requests.sessions.Session()
 
     def set_auth_headers(self, access_token, client_id):

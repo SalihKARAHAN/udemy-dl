@@ -6,6 +6,7 @@ import os
 import time
 import udemy
 import optparse
+import sys
 
 from sys import *
 from requests import get
@@ -33,6 +34,8 @@ class UdemyDownload:
         self.save       = save_links
         self.outto      = outto
         self.quality    = quality
+        reload(sys)  
+        sys.setdefaultencoding('utf8')
         
 
 
